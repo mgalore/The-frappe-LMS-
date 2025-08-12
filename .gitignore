@@ -1,0 +1,55 @@
+# Frappe LMS Development Environment
+# =====================================
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Frappe Bench - Exclude most, include only LMS app
+lms-bench/apps/frappe/
+lms-bench/env/
+lms-bench/logs/
+lms-bench/config/
+lms-bench/sites/
+lms-bench/node_modules/
+lms-bench/.vscode/
+
+# But INCLUDE our custom LMS app
+!lms-bench/apps/lms/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+.coverage
+.pytest_cache/
+*.egg-info/
+
+# Development
+.DS_Store
+.vscode/settings.json
+*.log
+*.pid
+*.rdb
+
+# Sensitive data
+*.key
+*.pem
+passwords.txt
+site_config.json
+common_site_config.json
+
+# Build artifacts
+node_modules/
+dist/
+build/
+*.min.js
+*.min.css
+
+# OS
+Thumbs.db
+.DS_Store
